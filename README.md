@@ -533,6 +533,53 @@ TODO
 ### Real world programming bash / Bash projects
 [Real World Programming with BASH Shell Scripts](https://www.youtube.com/watch?v=Z5oyKonnAV4)
 
+###  What is ?
+ - bash - `.bash_profile` and `.bashrc`
+ - zsh  - `.zsh_profile` and `.zshrc` `.zprofile` `.zsh_session`
+ 
+---------------- BASH Pager -----------------------
+# What is "$PAGER"
+## How It Works
+If the output of a command exceeds one screen, the program specified in the $PAGER variable is invoked to handle the output.
+* Common values for $PAGER are:
+  * less: A commonly used pager that allows scrolling backward and forward through the output.
+  * more: A simpler pager that only supports forward scrolling.
+  * cat: Displays all the output at once without any pagination.
+## Default Behavior
+If $PAGER is not set, most tools fall back to their own default. For example:
+  git uses less by default.
+  man also uses less.
+## How to Check $PAGER
+You can check its current value by running: \
+`echo $PAGER`
+
+- use 'cat' o print it directly on shell
+`export PAGER=cat` \
+`export GIT_PAGER=cat`
+- use 'less' (fefault) if you want a schrollable/naviagle view
+- 
 
 
-### 
+## Port to process/app finding 
+How to check whcih application uses the port?
+
+`lsof -i tcp:80`
+`sudo netstat -nlp`
+
+Ref 
+- https://stackoverflow.com/questions/4421633/who-is-listening-on-a-given-tcp-port-on-mac-os-x
+- https://superuser.com/questions/42843/finding-the-process-that-is-using-a-certain-port-in-linux
+
+
+TODO 
+Write Your Own Bash Scripts for Automation [Tutorial]
+https://www.youtube.com/watch?v=PPQ8m8xQAs8
+
+Real World Programming with BASH Shell Scripts
+https://www.youtube.com/watch?v=Z5oyKonnAV4
+Using Shell Scripting How To Create a Password | project 1 using shell script
+https://www.youtube.com/watch?v=hEFJbL_Fbh8&list=PLIIXhQukapwf5g4XENuRzyTDJPhkGG-na
+https://www.youtube.com/watch?v=xqjXBbOP7o0&list=PLIIXhQukapwf5g4XENuRzyTDJPhkGG-na&index=11
+
+https://www.youtube.com/watch?v=q1GDSHhaH0E
+
