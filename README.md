@@ -583,3 +583,73 @@ https://www.youtube.com/watch?v=xqjXBbOP7o0&list=PLIIXhQukapwf5g4XENuRzyTDJPhkGG
 
 https://www.youtube.com/watch?v=q1GDSHhaH0E
 
+https://github.com/kodekloudhub/shell-scripting-for-beginners-course
+
+1. Master the Basics of Terminal
+Open Terminal: Applications > Utilities > Terminal.
+Learn basic Unix commands:
+Navigation: cd, ls, pwd
+File management: cp, mv, rm, touch, mkdir
+Viewing: cat, less, head, tail
+
+
+2. Learn and Use zsh Efficiently
+macOS uses Z shell (zsh) by default.
+Customize it with Oh My Zsh:
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+Explore plugins like git, z, autojump, alias-finder.
+
+3. Customize Your Shell
+Edit ~/.zshrc to:
+Add aliases: alias gs='git status'
+Set environment variables
+Customize prompt with POWERLEVEL10K
+
+4. Learn Key Tools
+brew (Homebrew): The package manager for macOS.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fzf: Fuzzy finder for searching files and history.
+htop, bat, ripgrep, exa (enhanced ls), fd (modern find).
+
+5. Practice Shell Scripting
+Write shell scripts to automate repetitive tasks:
+#!/bin/zsh
+for file in *.txt; do
+  echo "Processing $file"
+  mv "$file" "${file%.txt}.bak"
+done
+Learn variables, loops, conditions, and functions.
+
+6. Use tmux or screen for Terminal Multiplexing
+Allows split panes, persistent sessions.
+Learn tmux basics: Ctrl-b + % (split), d (detach), s (switch sessions).
+
+7. Git and GitHub from the Shell
+Master git CLI commands.
+Use SSH keys with GitHub.
+Use CLI tools like gh (GitHub CLI).
+
+8. Explore macOS-Specific CLI Tools
+defaults for system settings
+osascript for AppleScript automation
+pbcopy, pbpaste for clipboard interaction
+
+9. Learn man and tldr
+man ls for detailed info.
+Install tldr for simpler explanations: brew install tldr
+
+10. Stay Consistent and Practice
+Use the terminal for daily tasks.
+Solve real problems: backups, batch renaming, downloading, etc.
+Try commandlinefu.com for inspiration.
+
+
+# Tool List by purpose
+
+## Alternative to `cd`
+- z, autojump, and zoxide
+- brew install zoxide
+- Instead of `cd ~/projects/web/react-app` --> `z reack`
+
+
+https://github.com/romkatv/powerlevel10k

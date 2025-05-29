@@ -1,8 +1,9 @@
 Delete/cleanup docker desktop
 https://docs.docker.com/desktop/uninstall/
 
-
+```
 brew install colima docker docker-credential-helper docker-compose
+```
 
 colima template
     ```
@@ -24,7 +25,8 @@ colima template
     rosetta: true
     ```
 
-colima start # For creation of ~/.docker/config.json
+`colima start` </br>
+-- For creation of ~/.docker/config.json
 
 vi ~/.docker/config.json
     "cliPluginsExtraDirs": [

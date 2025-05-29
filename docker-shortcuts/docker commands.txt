@@ -1,0 +1,23 @@
+docker run 
+--hostname=4d3919ff4668 
+--env=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin 
+--env=GOSU_VERSION=1.16 
+--env=JSYAML_VERSION=3.13.1 
+--env=MONGO_PACKAGE=mongodb-org 
+--env=MONGO_REPO=repo.mongodb.org 
+--env=MONGO_MAJOR=6.0 
+--env=MONGO_VERSION=6.0.5 
+--env=HOME=/data/db 
+--volume=/data/configdb 
+--volume=/data/db 
+--network=docker_default 
+-p 27017:27017 
+--label='com.docker.compose.config-hash=ef4e59c67aee63f9d7c398b921bd3ae99328e1700411cdf21d9150a94e8a316a' --label='com.docker.compose.container-number=1' --label='com.docker.compose.depends_on=' 
+--label='com.docker.compose.image=sha256:58042414fbaa40d859cff063c07cb9ccdebb4bd554ba9c679db6f061cbc7ab8b' --label='com.docker.compose.oneoff=False' --label='com.docker.compose.project=docker' 
+--label='com.docker.compose.project.config_files=/Users/rahulvr/Documents/PIBT_BSc/40. Project/review-master/docker/mongo-compose.yml' --label='com.docker.compose.project.working_dir=/Users/rahulvr/Documents/PIBT_BSc/40. Project/review-master/docker' 
+--label='com.docker.compose.service=mongodb' 
+--label='com.docker.compose.version=2.15.1' 
+--label='org.opencontainers.image.ref.name=ubuntu' 
+--label='org.opencontainers.image.version=22.04' 
+--runtime=runc 
+-d mongo:6.0.5
